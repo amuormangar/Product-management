@@ -1,0 +1,450 @@
+body{
+    overflow-x: hidden;
+    
+}
+
+.menu{
+    display: flex;
+    height: 100vh;
+   
+    
+}
+
+#outside{
+    height: 100vh;
+    width: 500px;
+    width: 50vw;
+    position: relative;
+}
+#nightview{
+    width: 500px;
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+}
+.karibu a{
+    position: absolute;
+    top: 330px;
+    margin-left: 320px;
+    color: white;
+    font-size:40px ;
+
+}
+.karibu p{
+    position: absolute;
+    top: 390px;
+    margin-left: 400px;
+    color: white;
+}
+.karibu h2{
+    position: absolute;
+    top: 280px;
+    margin-left: 400px;
+    color:red;
+  
+}
+.discover a {
+    position: absolute;
+    top: 330px;
+    text-decoration: none;
+    margin-left: 120px;
+    color: white;
+    font-size:40px ;
+}
+.discover h2{
+    position: absolute;
+    top: 280px;
+    margin-left: 200px;
+    color:red;
+}
+.discover p{
+    position: absolute;
+    top: 390px;
+    margin-left: 200px;
+    color: white;
+
+}
+
+
+
+
+/* //menu2// */
+
+.meals{
+    display: flex;
+    /* gap: 500px; */
+    
+}
+.menu-meals{
+    background-image: url(images/mat2.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1500px;
+    height: 900px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.menu-meals p{
+  position: absolute;
+  top: 300px;
+  color: aliceblue;
+  margin-left: 250px;
+  font-size: 40px;
+}
+.menu-meals h1{
+    margin-left: 220px;
+    top: 370px;
+    position: absolute;
+    font-size: 50px;
+}
+#logo{
+  right: 430px; 
+  position: absolute;
+  width: 150px; 
+  top: 180px;
+}
+.food{
+    position: relative;
+    background-color: black;
+    height: 1500px;
+    width: 1200px;
+    color: antiquewhite;
+    overflow-y: scroll;
+    /* overflow-x: scroll; */
+    
+}
+
+
+a{
+    text-decoration: none;
+    margin-left: 50px;
+    color: brown;
+    font-size: 20px;
+}
+.coffee li {
+    display: inline-flex;
+    justify-content: space-between;
+    
+}
+#tea{
+    color: brown;
+    margin-left: 40px;
+}
+#tea-coffee{
+    color: brown;
+}
+#chocolate{
+    margin-left: 40px;
+    color: brown;
+}
+.breakfast{
+    display: flex;
+    gap: 350px;
+    list-style: none;
+}
+ol{
+    list-style: none;
+}
+.food-catergory {
+    color: white;
+    margin-bottom: 100px;
+
+}
+
+.catergory{
+    display: flex;
+    bottom: 90px;
+    margin-bottom: 100px;
+
+}
+.image-logo img{
+    width: 90px;
+    list-style: none;
+    text-decoration: none;
+}
+.food-menu{
+    /* margin-bottom: 90px; */
+    display: flex;
+    
+}
+.food-price {
+    margin-bottom: 30px;
+    list-style: none;
+    margin-left: 4cm;
+}
+ul{
+    list-style: none;
+}
+.drinks{
+    position: absolute;
+    top: 1200px;
+}
+h1{
+    color: white;
+    margin-left: 2cm;
+}
+
+#soups{
+    color: orangered;
+    margin-left: 2cm;
+    font-size: 120%;
+}
+
+#logoo{
+    width: 30%;
+}
+.lunch{
+    display: flex;
+    position: relative;
+}
+.food-description{
+  margin-left: -5cm; 
+}
+.price{
+    margin-top: 0.8cm;
+    margin-left: 1cm;
+}
+
+.drinks{
+    display: flex;
+    gap: 280px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 1500px;
+
+}
+.juices{
+    margin-bottom: 90px;
+}
+.drink h1{
+    color: brown;
+}
+
+@media screen and (min-width:300px) and (max-width:800px){
+    .menu{
+        display: block;
+        height: 600px;
+       
+        
+    }
+    
+    #outside{
+        height: 600px;
+        width: 400px;
+        
+        position: relative;
+    }
+    #nightview{
+        
+        height: 600px;
+        width: 400px;
+        /* position: relative; */
+    }
+    .karibu a{
+        position: absolute;
+        top: 330px;
+        margin-left: -20px;
+        color: white;
+        font-size:20px ;
+    
+    }
+    .karibu p{
+        position: absolute;
+        top: 360px;
+        font-size: 12px;
+        margin-left: 60px;
+        color: white;
+    }
+    .karibu h2{
+        position: absolute;
+        top: 280px;
+        margin-left: 50px;
+        color:red;
+      
+    }
+    .discover a {
+        position: absolute;
+        top: 550px;
+        text-decoration: none;
+        left: -40px;
+        color: white;
+        font-size:20px ;
+    }
+    .discover h2{
+        position: absolute;
+        top: 500px;
+        margin-left: 150px;
+        color:red;
+    }
+    .discover p{
+        position: absolute;
+        top: 560px;
+        margin-left: 150px;
+        color: white;
+    
+    }
+    .meals{
+        display: block;
+        /* gap: 500px; */
+        
+    }
+    .menu-meals{
+        background-image: url(images/mat2.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        width: 400px;
+        height: 400px;
+    
+    }
+    .menu-meals p{
+      position: absolute;
+      top: 200px;
+      color: aliceblue;
+      margin-left: 150px;
+      font-size: 30px;
+    }
+    .menu-meals h1{
+        margin-left: 150px;
+        top: 250px;
+        position: absolute;
+        font-size: 20px;
+    }
+    #logo{
+      right: 170px; 
+      position: absolute;
+      width: 90px; 
+      top: 140px;
+    }
+    .food{
+        position: relative;
+        background-color: black;
+        height: 500px;
+        width: 700px;
+        color: antiquewhite;
+        overflow-y: scroll;
+        /* overflow-x: scroll; */
+        
+    }
+    
+    
+    a{
+        text-decoration: none;
+        margin-left: 10px;
+        color: brown;
+        font-size: 20px;
+    }
+    .coffee li {
+        display: inline-flex;
+        right: -90px;
+        
+    }
+    #tea{
+        color: brown;
+        margin-left: 40px;
+    }
+    #tea-coffee{
+        color: brown;
+    }
+    #chocolate{
+        margin-left: 40px;
+        color: brown;
+    }
+    .breakfast{
+        display: flex;
+        gap: 60px;
+        list-style: none;
+    }
+    ol{
+        list-style: none;
+    }
+    .food-catergory {
+        color: white;
+        margin-bottom: 1px;
+    
+    }
+    
+    .catergory{
+        display: flex;
+        font-size: 1px;
+        margin-bottom: 10px;
+    
+    }
+    .image-logo img{
+        width: 1px;
+        list-style: none;
+        text-decoration: none;
+    }
+    .food-menu{
+        /* margin-bottom: 90px; */
+        display: flex;
+        font-size: 10px;
+        
+    }
+    .food-price {
+        margin-bottom: 30 px;
+        list-style: none;
+        margin-left: 1cm;
+    }
+    ul{
+        list-style: none;
+    }
+    .drinks{
+        position: absolute;
+        top: 1200px;
+    }
+    h1{
+        color: white;
+        margin-left: 2cm;
+    }
+    
+    #soups{
+        color: orangered;
+        margin-left: 2cm;
+        font-size: 120%;
+    }
+    
+    #logoo{
+        width: 15%;
+        margin-bottom: 50px;
+    }
+    .lunch{
+        display: flex;
+        position: relative;
+    }
+    .food-description{
+      margin-left: cm; 
+      font-size: 11px;
+      position: absolute;
+      left: 250px;
+      
+      width: 200px;
+    }
+    .food-description h3{
+        font-size: 14px;
+        
+    }
+    .price{
+        margin-top: 0.8cm;
+        font-size: 10px;
+        margin-left: -60px;
+    }
+    
+    .drinks{
+        display: flex;
+        gap: 20px;
+        color: white;
+        z-index: 1;
+        position: absolute;
+        top: 1100px;
+        
+    
+    }
+    .juices{
+        margin-bottom: 0px;
+    }
+    .drink h1{
+        color: brown;
+        font-size: 18px;
+    }  
+}

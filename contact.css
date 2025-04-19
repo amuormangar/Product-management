@@ -1,0 +1,40 @@
+.contact{
+    background-image: url(images/outside.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    width: 1500px;
+    height: 800px;
+    color: beige;
+
+}
+.contact-kitisuru{
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 400px;
+    top: 270px;
+    border: solid 1px white;
+    padding: 40px 20px 20px 20px;
+    padding-right: 50px;
+
+}
+.contact-kilimani{
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 800px;
+    top: 250px;
+    border: solid 1px white;
+    padding-right: 40px;
+    padding-left: 60px;
+
+}
+#logo{
+    color: black;
+    left: 600px;
+    position: absolute;
+    width: 10%;
+    top: 30px;
+}
+
+
+
+

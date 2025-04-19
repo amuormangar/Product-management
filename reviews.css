@@ -1,0 +1,12 @@
+#logo{
+    color: black;
+    left: 600px;
+    position: absolute;
+    width: 10%;
+    top: 30px;
+}
+.comments{
+    border: solid 1px black;
+    width: 900px;
+    height: 900px;
+}

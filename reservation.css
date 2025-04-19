@@ -1,0 +1,71 @@
+.reservation{
+    display: flex;
+
+}
+
+
+.karibu h1 {
+   position: absolute; 
+   top: 420px;
+   margin-left: 200px;
+   color: brown;
+} 
+.karibu h2{
+    top: 400px;
+    margin-left: 200px;  
+    position: absolute; 
+    color: aliceblue;
+}
+#reservation-image{
+    width: 700px;
+    position: relative;
+    height: 800px;
+} 
+.form-reservation{
+    width: 900px;
+    background-color: black;
+    
+
+}  
+label{
+    width: 50px;
+    color: aliceblue;
+    margin-left: 10px;
+
+} 
+input{
+    width: 600px;
+    height:30px;
+    margin-bottom: 40px;
+    background: none;
+    color: gray;
+    margin-left: 10px;
+} 
+#button{
+    width: 610px;
+    height: 39px;
+    margin-left: 10px;
+}
+#branch{
+    width: 610px;
+    height: 40px;
+    background: none;
+    margin-left: 10px;
+}
+#logo{
+    color: black;
+    margin-left: 600px;
+    position: absolute;
+    width: 10%;
+    top: 150px;
+}
+#logo{
+    color: black;
+    margin-left: 260px;
+    position: absolute;
+    width: 10%;
+    top: 150px;
+}
+
+
+

@@ -1,0 +1,92 @@
+.live{
+    
+    background-image: url(images/afridrum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1500px;
+    height: 1000px;
+    position: relative;
+}
+#nubia{
+    position: absolute;
+    margin-left: 700px;
+}
+.live-nubia h1{
+    margin-left: 1000px;
+    font-size: 25px;
+    color:white;
+}
+.live-nubia p {
+    margin-left: 1000px;
+    color: brown;
+}
+#sage{
+    margin-left: 700px;
+    position: absolute;
+    top: 700px;
+
+}
+.live-sage h1{
+    margin-left: 1000px;
+    color: aliceblue;
+    position: absolute;
+    top: 700px;
+    font-size: 25px;
+}
+.live-sage p{
+    margin-left: 1000px;
+    position: absolute;
+    color: brown;
+    top: 670px;
+}
+#islam{
+    margin-left: 700px;
+    position: absolute;
+    top: 400px;
+}
+.live-islam h1{
+    margin-left: 1000px;
+    top: 400px;
+    color: aliceblue;
+    position: absolute;
+    font-size: 25px;
+}
+.live-islam p{
+    margin-left: 1000px;
+    position: absolute;
+    color: brown;
+    top: 380px;
+}
+.live-islam{
+    display: flex;
+}
+.live-sage{
+    display: flex;
+}
+.live-nubia{
+    display: flexbox;
+}
+.tukatike{
+    color: aliceblue;
+    position: absolute;
+    left: 300px;
+    top: 270px;
+}
+.tukatike h1{
+    position: absolute;
+    top: 50px;
+}
+.tukatike h2{
+    color: brown;
+    margin-left: -30px;
+    font-size: 30px;
+}
+#logo{
+    color: black;
+    margin-left: 260px;
+    position: absolute;
+    width: 10%;
+    top: 150px;
+}
+
+

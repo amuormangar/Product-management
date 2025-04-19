@@ -1,0 +1,240 @@
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.home{
+    
+    background-image: url(images/outside.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+    animation-name:image;
+    animation: image;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+#logo{
+    color: black;
+    margin-left: 600px;
+    position: absolute;
+    width: 10%;
+    top: 150px;
+}
+
+.animate::after{
+    animation: sizingAnimation 20s infinite;
+    /* animation-fill-mode: forwards !important; */
+    content: "welcome";
+    position: fixed;
+    color: rgb(59, 57, 57);
+    font-size: 90px;
+    margin-left: 550px;
+    top: 300px;
+    
+}
+.navigations ul{
+    display: flex;
+    color:white;
+    position: absolute;
+    margin-top: 700px;
+    justify-content: center;
+    margin-left: 400px;
+    gap: 30px;
+    list-style: none;
+    border-radius: 50px;
+    border: 1px solid;
+    background-color: black;
+    height: 40px;
+    width: 600px;
+    text-align: center;
+    padding-top: 15PX;
+    
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.icons{
+    justify-content: center;
+    position: absolute;
+}
+#facebook{
+    margin-left: 1300px;
+    position: absolute;
+    top: 10px;
+    
+    
+
+}
+#instagram{
+ margin-left: 1250px;
+ position: absolute;
+ top: 10px;
+}
+#whatsapp{
+    position:absolute ;
+    top: 600px;
+    margin-left: 1300px;
+    color: green;
+
+}
+@keyframes image{
+   0% {background-image: url(images/outside.jpg);}
+   20%{background-image: url(images/dining.jpg);} 
+   40%{background-image: url(images/food.jpg);}
+   60%{ background-image: url(images/spices.jpg);}
+80%{background-image: url(images/spices2.jpeg);
+}
+}
+@keyframes sizingAnimation{
+    from{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 400px;
+        position: fixed;
+        content: "";
+    }
+    20%{
+        content: "discover";
+        position: fixed;
+    }
+    40%{
+        content: "experience";
+        position: fixed;
+    }
+    60%{
+        content: "taste";
+        position: fixed;
+
+    }
+    80%{
+        content: "savour";
+        position: fixed;
+    }
+}
+@media screen and (min-width:300px) and (max-width:800px){
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .home{
+    
+        background-image: url(images/outside.jpg);
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 700px;
+        width: 500px;
+        animation-name:image;
+        animation: image;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+
+
+
+
+    nimate::after{
+        animation: sizingAnimation 20s infinite;
+        /* animation-fill-mode: forwards !important; */
+        content: "welcome";
+        position: absolute;
+        color: rgb(59, 57, 57);
+        font-size: 1px;
+        right: 00px;
+        top: 100px;
+        
+    }
+    
+    #logo{
+        color: black;
+        right: 130px;
+        position: absolute;
+        width: 150px;
+        top:200px;
+    }
+    @keyframes sizingAnimation{
+        from{
+            width: 20px;
+            height: 20px;
+            margin-bottom: 00px;
+            /* position: fixed; */
+            content: "";
+        }
+        20%{
+            content: "discover";
+            /* position: fixed; */
+        }
+        40%{
+            content: "experience";
+            /* position: fixed; */
+        }
+        60%{
+            content: "taste";
+            /* position: fixed; */
+    
+        }
+        80%{
+            content: "savour";
+            /* position: fixed; */
+        }
+        
+        }
+
+.navigations ul{
+    display: flex;
+    color:white;
+    position: absolute;
+    justify-content: center;
+    margin-left: 00px;
+    gap: 10px;
+    list-style: none;
+    border-radius: 50px;
+    border: 1px solid;
+    background-color: black;
+    height: 30px;
+    bottom: 30px;
+    width: 330px;
+    font-size: 11px;
+    position:absolute ;
+    padding-top: 11PX;
+    
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.icons{
+    justify-content: center;
+    position: absolute;
+}
+#facebook{
+    margin-left: 330px;
+    position: absolute;
+    top: 10px;
+    
+    
+
+}
+#instagram{
+ margin-left: 300px;
+ position: absolute;
+ top: 10px;
+}
+#whatsapp{
+    position:absolute ;
+    top: 500px;
+    right: -430px;
+    width: 90px;
+    color: green;
+}
+    
+}
+
