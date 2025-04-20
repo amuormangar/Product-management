@@ -18,6 +18,7 @@ function handleNavigation(direction){
         updateButtonStates()
     }
 }
+
 function updateButtonStates(){
     if(newIndex ===0){
         prevButton.disabled = true;

@@ -3,7 +3,7 @@
     display: flex;
     background-repeat: no-repeat;
     width: 1500px;
-    height: 800px;
+    height: 900px;
     color: beige;
 
 }
@@ -11,30 +11,73 @@
     margin: 0 auto;
     position: absolute;
     margin-left: 400px;
-    top: 270px;
+    top: 250px;
+    
     border: solid 1px white;
     padding: 40px 20px 20px 20px;
-    padding-right: 50px;
+    padding-right: 30px;
 
 }
 .contact-kilimani{
     margin: 0 auto;
     position: absolute;
-    margin-left: 800px;
-    top: 250px;
+    margin-left: 750px;
+    top: 290px;
+    width: 180px;
     border: solid 1px white;
     padding-right: 40px;
-    padding-left: 60px;
+    padding-left: 40px;
 
 }
 #logo{
     color: black;
-    left: 600px;
+    left: 620px;
     position: absolute;
     width: 10%;
     top: 30px;
 }
+@media screen and ( min-width:300px) and (max-width:800px) {
+    
 
+    .contact{
+        background-image: url(images/outside.jpg);
+        display: block;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 1200px;
+        color: beige;
+    
+    }
+    .contact-kitisuru{
+        margin: 0 auto;
+        position: absolute;
+        margin-left: 110px;
+        top: 220px;
+        
+        border: solid 1px white;
+        padding: 40px 20px 20px 20px;
+        padding-right: 30px;
+    
+    }
+    .contact-kilimani{
+        margin: 0 auto;
+        position: absolute;
+        margin-left: 110px;
+        top: 590px;
+        width: 180px;
+        border: solid 1px white;
+        padding-right: 40px;
+        padding-left: 60px;
+    
+    }
+    #logo{
+        color: black;
+        left: 170px;
+        position: absolute;
+        width: 40%;
+        top: 15px;
+    }  
 
+}
 
 

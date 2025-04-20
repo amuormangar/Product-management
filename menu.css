@@ -223,7 +223,7 @@ h1{
 
 @media screen and (min-width:300px) and (max-width:800px){
     .menu{
-        display: block;
+        display: flex;
         height: 600px;
        
         
@@ -231,7 +231,7 @@ h1{
     
     #outside{
         height: 600px;
-        width: 400px;
+        width: 200px;
         
         position: relative;
     }
@@ -239,48 +239,48 @@ h1{
         
         height: 600px;
         width: 400px;
-        /* position: relative; */
+        position: relative;
     }
     .karibu a{
         position: absolute;
         top: 330px;
-        margin-left: -20px;
+        margin-left: 10px;
         color: white;
-        font-size:20px ;
+        font-size:25px ;
     
     }
     .karibu p{
         position: absolute;
         top: 360px;
         font-size: 12px;
-        margin-left: 60px;
+        margin-left: 100px;
         color: white;
     }
     .karibu h2{
         position: absolute;
         top: 280px;
-        margin-left: 50px;
+        margin-left: 90px;
         color:red;
       
     }
     .discover a {
-        position: absolute;
-        top: 550px;
+        /* position: absolute; */
+        top: 330px;
         text-decoration: none;
-        left: -40px;
+        left:120px;
         color: white;
-        font-size:20px ;
+        font-size:25px ;
     }
     .discover h2{
         position: absolute;
-        top: 500px;
-        margin-left: 150px;
+        top: 280px;
+        margin-left: 30px;
         color:red;
     }
     .discover p{
         position: absolute;
-        top: 560px;
-        margin-left: 150px;
+        top: 340px;
+        margin-left: 30px;
         color: white;
     
     }
@@ -293,7 +293,7 @@ h1{
         background-image: url(images/mat2.jpg);
         background-repeat: no-repeat;
         position: relative;
-        width: 400px;
+        width: 500px;
         height: 400px;
     
     }
@@ -311,7 +311,7 @@ h1{
         font-size: 20px;
     }
     #logo{
-      right: 170px; 
+      right: 270px; 
       position: absolute;
       width: 90px; 
       top: 140px;
@@ -319,8 +319,8 @@ h1{
     .food{
         position: relative;
         background-color: black;
-        height: 500px;
-        width: 700px;
+        height: 700px;
+        width: 500px;
         color: antiquewhite;
         overflow-y: scroll;
         /* overflow-x: scroll; */
