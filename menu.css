@@ -1,450 +1,427 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     overflow-x: hidden;
-    
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
 }
 
-.menu{
+.menu {
     display: flex;
     height: 100vh;
-   
-    
-}
-
-#outside{
-    height: 100vh;
-    width: 500px;
-    width: 50vw;
+    flex-wrap: wrap;
     position: relative;
 }
-#nightview{
-    width: 500px;
-    height: 100vh;
-    width: 50vw;
-    position: relative;
-}
-.karibu a{
-    position: absolute;
-    top: 330px;
-    margin-left: 320px;
-    color: white;
-    font-size:40px ;
 
+.location-card {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-.karibu p{
+
+.image-container {
     position: absolute;
-    top: 390px;
-    margin-left: 400px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.location-card:hover .image-container img {
+    transform: scale(1.05);
+}
+
+.location-info {
+    position: absolute;
+    text-align: center;
     color: white;
+    z-index: 2;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    max-width: 80%;
+    backdrop-filter: blur(5px);
 }
-.karibu h2{
-    position: absolute;
-    top: 280px;
-    margin-left: 400px;
-    color:red;
-  
+
+.location-info h2 {
+    color: red;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
-.discover a {
-    position: absolute;
-    top: 330px;
+
+.location-info h1 a {
+    color: white;
+    font-size: 2rem;
     text-decoration: none;
-    margin-left: 120px;
-    color: white;
-    font-size:40px ;
-}
-.discover h2{
-    position: absolute;
-    top: 280px;
-    margin-left: 200px;
-    color:red;
-}
-.discover p{
-    position: absolute;
-    top: 390px;
-    margin-left: 200px;
-    color: white;
-
+    display: block;
+    margin: 15px 0;
+    transition: color 0.3s;
 }
 
+.location-info h1 a:hover {
+    color: #f0a500;
+}
 
+.location-info p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
 
-
-/* //menu2// */
-
-.meals{
+.meals {
     display: flex;
-    /* gap: 500px; */
-    
+    flex-direction: column;
+    min-height: 100vh;
 }
-.menu-meals{
-    background-image: url(images/mat2.jpg);
+
+.menu-meals {
+    background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    position: relative;
-    width: 1500px;
-    height: 900px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-.menu-meals p{
-  position: absolute;
-  top: 300px;
-  color: aliceblue;
-  margin-left: 250px;
-  font-size: 40px;
-}
-.menu-meals h1{
-    margin-left: 220px;
-    top: 370px;
-    position: absolute;
-    font-size: 50px;
-}
-#logo{
-  right: 430px; 
-  position: absolute;
-  width: 150px; 
-  top: 180px;
-}
-.food{
-    position: relative;
-    background-color: black;
-    height: 1500px;
-    width: 1200px;
-    color: antiquewhite;
-    overflow-y: scroll;
-    /* overflow-x: scroll; */
-    
-}
-
-
-a{
-    text-decoration: none;
-    margin-left: 50px;
-    color: brown;
-    font-size: 20px;
-}
-.coffee li {
-    display: inline-flex;
-    justify-content: space-between;
-    
-}
-#tea{
-    color: brown;
-    margin-left: 40px;
-}
-#tea-coffee{
-    color: brown;
-}
-#chocolate{
-    margin-left: 40px;
-    color: brown;
-}
-.breakfast{
+    height: 300px;
     display: flex;
-    gap: 350px;
-    list-style: none;
-}
-ol{
-    list-style: none;
-}
-.food-catergory {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
     color: white;
-    margin-bottom: 100px;
-
 }
 
-.catergory{
+.menu-meals p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-meals h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.7));
+}
+
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    z-index: 10;
+}
+
+.back-button {
     display: flex;
-    bottom: 90px;
-    margin-bottom: 100px;
-
-}
-.image-logo img{
-    width: 90px;
-    list-style: none;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
+    color: white;
 }
-.food-menu{
-    /* margin-bottom: 90px; */
+
+.back-button span {
+    background-color: rgba(255, 165, 0, 0.9);
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.food {
+    flex: 1;
+    padding: 20px;
+    background-color: #111;
+    overflow-y: auto;
+    max-height: calc(100vh - 300px);
+}
+
+.menu-nav {
     display: flex;
-    
-}
-.food-price {
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #222;
     margin-bottom: 30px;
-    list-style: none;
-    margin-left: 4cm;
-}
-ul{
-    list-style: none;
-}
-.drinks{
-    position: absolute;
-    top: 1200px;
-}
-h1{
-    color: white;
-    margin-left: 2cm;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-#soups{
+.menu-nav a {
+    text-decoration: none;
+    color: #f0a500;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.menu-nav a:hover {
+    background-color: #333;
+}
+
+.menu-section {
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.menu-section h1 {
+    color: #f0a500;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    color: #f0a500;
+    font-size: 1.5rem;
+    margin: 25px 0 15px;
+}
+
+#soups {
     color: orangered;
-    margin-left: 2cm;
-    font-size: 120%;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
-#logoo{
-    width: 30%;
-}
-.lunch{
+.coffee ul {
     display: flex;
-    position: relative;
-}
-.food-description{
-  margin-left: -5cm; 
-}
-.price{
-    margin-top: 0.8cm;
-    margin-left: 1cm;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
 }
 
-.drinks{
-    display: flex;
-    gap: 280px;
-    color: white;
-    z-index: 1;
-    position: absolute;
-    top: 1500px;
-
-}
-.juices{
-    margin-bottom: 90px;
-}
-.drink h1{
+.coffee li {
     color: brown;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-@media screen and (min-width:300px) and (max-width:800px){
-    .menu{
-        display: flex;
-        height: 600px;
-       
-        
+.breakfast-menu, .category-menu, .lunch-menu, .drink-menu {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+    flex-wrap: wrap;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item span {
+    flex: 1;
+    padding: 5px;
+}
+
+.item-prices {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item-details {
+    flex: 2;
+    padding: 0 15px;
+}
+
+.item-details h3 {
+    margin-bottom: 5px;
+    color: #f0a500;
+}
+
+.item-details p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #f0a500;
+    min-width: 100px;
+    text-align: right;
+}
+
+.item-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
     }
     
-    #outside{
-        height: 600px;
-        width: 200px;
-        
+    .location-card {
+        height: 50vh;
+        min-width: 100%;
         position: relative;
     }
-    #nightview{
-        
-        height: 600px;
-        width: 400px;
-        position: relative;
-    }
-    .karibu a{
+    
+    .image-container {
         position: absolute;
-        top: 330px;
-        margin-left: 10px;
-        color: white;
-        font-size:25px ;
-    
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
-    .karibu p{
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .location-info {
         position: absolute;
-        top: 360px;
-        font-size: 12px;
-        margin-left: 100px;
-        color: white;
-    }
-    .karibu h2{
-        position: absolute;
-        top: 280px;
-        margin-left: 90px;
-        color:red;
-      
-    }
-    .discover a {
-        /* position: absolute; */
-        top: 330px;
-        text-decoration: none;
-        left:120px;
-        color: white;
-        font-size:25px ;
-    }
-    .discover h2{
-        position: absolute;
-        top: 280px;
-        margin-left: 30px;
-        color:red;
-    }
-    .discover p{
-        position: absolute;
-        top: 340px;
-        margin-left: 30px;
-        color: white;
-    
-    }
-    .meals{
-        display: block;
-        /* gap: 500px; */
-        
-    }
-    .menu-meals{
-        background-image: url(images/mat2.jpg);
-        background-repeat: no-repeat;
-        position: relative;
-        width: 500px;
-        height: 400px;
-    
-    }
-    .menu-meals p{
-      position: absolute;
-      top: 200px;
-      color: aliceblue;
-      margin-left: 150px;
-      font-size: 30px;
-    }
-    .menu-meals h1{
-        margin-left: 150px;
-        top: 250px;
-        position: absolute;
-        font-size: 20px;
-    }
-    #logo{
-      right: 270px; 
-      position: absolute;
-      width: 90px; 
-      top: 140px;
-    }
-    .food{
-        position: relative;
-        background-color: black;
-        height: 700px;
-        width: 500px;
-        color: antiquewhite;
-        overflow-y: scroll;
-        /* overflow-x: scroll; */
-        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+        width: 90%;
+        padding: 15px;
     }
     
-    
-    a{
-        text-decoration: none;
-        margin-left: 10px;
-        color: brown;
-        font-size: 20px;
-    }
-    .coffee li {
-        display: inline-flex;
-        right: -90px;
-        
-    }
-    #tea{
-        color: brown;
-        margin-left: 40px;
-    }
-    #tea-coffee{
-        color: brown;
-    }
-    #chocolate{
-        margin-left: 40px;
-        color: brown;
-    }
-    .breakfast{
-        display: flex;
-        gap: 60px;
-        list-style: none;
-    }
-    ol{
-        list-style: none;
-    }
-    .food-catergory {
-        color: white;
-        margin-bottom: 1px;
-    
+    .location-info h2 {
+        font-size: 2rem;
     }
     
-    .catergory{
-        display: flex;
-        font-size: 1px;
-        margin-bottom: 10px;
-    
-    }
-    .image-logo img{
-        width: 1px;
-        list-style: none;
-        text-decoration: none;
-    }
-    .food-menu{
-        /* margin-bottom: 90px; */
-        display: flex;
-        font-size: 10px;
-        
-    }
-    .food-price {
-        margin-bottom: 30 px;
-        list-style: none;
-        margin-left: 1cm;
-    }
-    ul{
-        list-style: none;
-    }
-    .drinks{
-        position: absolute;
-        top: 1200px;
-    }
-    h1{
-        color: white;
-        margin-left: 2cm;
+    .location-info h1 a {
+        font-size: 1.5rem;
     }
     
-    #soups{
-        color: orangered;
-        margin-left: 2cm;
-        font-size: 120%;
+    .menu-meals {
+        height: 250px;
     }
     
-    #logoo{
-        width: 15%;
-        margin-bottom: 50px;
-    }
-    .lunch{
-        display: flex;
-        position: relative;
-    }
-    .food-description{
-      margin-left: cm; 
-      font-size: 11px;
-      position: absolute;
-      left: 250px;
-      
-      width: 200px;
-    }
-    .food-description h3{
-        font-size: 14px;
-        
-    }
-    .price{
-        margin-top: 0.8cm;
-        font-size: 10px;
-        margin-left: -60px;
+    .menu-meals h1 {
+        font-size: 2rem;
     }
     
-    .drinks{
-        display: flex;
+    .menu-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .menu-nav a {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+    
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .item-details {
+        padding: 10px 0;
+    }
+    
+    .item-price {
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .coffee ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .item-prices {
+        flex-direction: row;
         gap: 20px;
-        color: white;
-        z-index: 1;
-        position: absolute;
-        top: 1100px;
-        
+        margin-top: 10px;
+    }
     
+    .back-button-container {
+        top: 10px;
+        left: 10px;
     }
-    .juices{
-        margin-bottom: 0px;
+    
+    .back-button span {
+        font-size: 0.8rem;
+        padding: 6px 12px;
     }
-    .drink h1{
-        color: brown;
-        font-size: 18px;
-    }  
+}
+
+@media screen and (max-width: 480px) {
+    .location-card {
+        height: 40vh;
+    }
+    
+    .location-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .location-info h1 a {
+        font-size: 1.2rem;
+    }
+    
+    .menu-meals h1 {
+        font-size: 1.5rem;
+    }
+    
+    .menu-meals p {
+        font-size: 1.2rem;
+    }
+    
+    .menu-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .menu-item span {
+        font-size: 0.9rem;
+    }
+    
+    .item-logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .back-button span {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .location-card {
+        height: 40vh;
+    }
 }

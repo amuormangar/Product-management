@@ -3,77 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reviews</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="reviews.css">
-    
-    
 </head>
 <body>
- <div class="comments">
-
-    
-    <a href="index.html"><img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg" id="logo"></a>
+    <div class="comments">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c0b0524cdc940f7455af22_logo.svg" id="logo" alt="Restaurant Logo">
+                <span>Back to Home</span>
+            </a>
+        </div>
         
+        <section class="slider">
+            <div class="reviews active">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <h1>Reviews</h1>
+                <p>This place is run by educated, innovative & creative people! The architectural layout, seating and ambience, 
+                    lighting, cutlery: servings, designs have been impeccably well thought out! Even the washrooms were excellent! 
+                    The food was awesome! This is surprising considering the fact that we were there on Saturday night 
+                    & they almost had no space! we were extremely well served too! Rare to find such finesse in Kenya! 
+                    You must go visit them!</p>
+                <h2>Irfan Virji</h2>
+                <h3>Kitisuru</h3>
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+            </div>
             
-        
-       
-       <section class="slider">
-       <div class="reviews" id="active">
-        <i class="fa-solid fa-quote-left"></i>
-        <h1>Reviews</h1>
-        <p>This place is run by educated , innovative & creative people! The architectural layout ,seating and ambience,
-            <br>
-            lighting, cutley: servings, designs have been impeccably well thought out! Even the washrooms were excellent!
-            <br>
-            The food was awesome! This is surprising considering the fact that we were there on Saturday night
-            <br>
-            & they almost had no space! we were extremely well served too!Rare to find such finese in Kenya! your
-            <br>
-                                                    go visit them!
-         </p>
-         <h2>Irfan Virji</h2>
-         <h3>Kitisuru</h3>
-         <i class="fa-solid fa-quote-right"></i>
-    </div>
-    <div class="slide-container" id="next">
-        <i class="fa-solid fa-quote-left"></i>
-        <h1>Reviews</h1>
-        <p>
-            Such a fanstastic restaurant, i plan on being a regular here .The food is amazing ,the atmosphere is so nice and
-            <br>
-            the service is exceptional .I pray you are able to visit them at least once so you can understand what am saying.
-            <br>
-            10/10 .Recommended dishes:sreek must go visit them! 
-        </p>
-        <h2>Paul Kamau</h2>
-        <h3>KITISURU</h3>
-        <i class="fa-solid fa-quote-right"></i>
-    </div>
-   
-    <div class="container" id="prev">
-        <i class="fa-solid fa-quote-left"></i>
-        <h1>Reviews</h1>
-        <p>Best place to eat out .If you want to have a nice romantic date this place is perfect .The food is fanstastic,only
-            <br>
-             be careful because the portions are bigger than you would expect it </p>
-             <h2>Vladimiro Stiva</h2>
-             <h3>KITISURU</h3>
-             <div> 
+            <div class="reviews">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <h1>Reviews</h1>
+                <p>Such a fantastic restaurant, I plan on being a regular here. The food is amazing, the atmosphere is so nice and 
+                    the service is exceptional. I pray you are able to visit them at least once so you can understand what I'm saying. 
+                    10/10. Recommended dishes: Sreek. You must go visit them!</p>
+                <h2>Paul Kamau</h2>
+                <h3>Kitisuru</h3>
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+            </div>
+            
+            <div class="reviews">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <h1>Reviews</h1>
+                <p>Best place to eat out. If you want to have a nice romantic date this place is perfect. The food is fantastic, only 
+                    be careful because the portions are bigger than you would expect!</p>
+                <h2>Vladimiro Stiva</h2>
+                <h3>Kitisuru</h3>
+                <i class="fa-solid fa-quote-right quote-icon"></i>
+            </div>
+            
+            <div class="navigation-buttons">
                 <button class="prev-btn">
-                    <i class="fa-solid fa-chevron-left"></i> 
+                    <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button class="next-button">
-                    <i class="fa-solid fa-chevron-right"></i>>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </button>
-                 
             </div>
-            <script src="reviews.js"></script>
-            <i class="fa-solid fa-quote-right"></i>
+        </section>
     </div>
     
-</section>  
- </div> 
+    <script src="reviews.js"></script>
 </body>
 </html>

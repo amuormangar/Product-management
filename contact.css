@@ -1,83 +1,173 @@
-.contact{
-    background-image: url(images/outside.jpg);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+    overflow-x: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+    background-size: cover;
+}
+
+.contact {
     display: flex;
-    background-repeat: no-repeat;
-    width: 1500px;
-    height: 900px;
-    color: beige;
-
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-.contact-kitisuru{
-    margin: 0 auto;
+
+.contact-card {
+    background: rgba(30, 30, 30, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-kitisuru, .contact-kilimani {
+    background: rgba(30, 30, 30, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-kitisuru h1, .contact-kilimani h1 {
+    color: #f0a500;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.contact-kitisuru p, .contact-kilimani p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.5;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.contact-kitisuru p:first-of-type, .contact-kilimani p:first-of-type {
+    font-weight: bold;
+    color: #f0a500;
+}
+
+.back-button-container {
     position: absolute;
-    margin-left: 400px;
-    top: 250px;
-    
-    border: solid 1px white;
-    padding: 40px 20px 20px 20px;
-    padding-right: 30px;
-
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    z-index: 100;
 }
-.contact-kilimani{
-    margin: 0 auto;
-    position: absolute;
-    margin-left: 750px;
-    top: 290px;
-    width: 180px;
-    border: solid 1px white;
-    padding-right: 40px;
-    padding-left: 40px;
 
+#logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.7));
 }
-#logo{
-    color: black;
-    left: 620px;
-    position: absolute;
-    width: 10%;
-    top: 30px;
-}
-@media screen and ( min-width:300px) and (max-width:800px) {
-    
 
-    .contact{
-        background-image: url(images/outside.jpg);
-        display: block;
-        background-repeat: no-repeat;
-        width: 500px;
-        height: 1200px;
-        color: beige;
-    
+.back-button-container a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-button-container span {
+    background-color: rgba(255, 165, 0, 0.9);
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
     }
-    .contact-kitisuru{
-        margin: 0 auto;
-        position: absolute;
-        margin-left: 110px;
-        top: 220px;
-        
-        border: solid 1px white;
-        padding: 40px 20px 20px 20px;
-        padding-right: 30px;
     
+    .contact-kitisuru, .contact-kilimani {
+        max-width: 90%;
+        padding: 20px;
     }
-    .contact-kilimani{
-        margin: 0 auto;
-        position: absolute;
-        margin-left: 110px;
-        top: 590px;
-        width: 180px;
-        border: solid 1px white;
-        padding-right: 40px;
-        padding-left: 60px;
     
+    .contact-kitisuru h1, .contact-kilimani h1 {
+        font-size: 1.5rem;
     }
-    #logo{
-        color: black;
-        left: 170px;
-        position: absolute;
-        width: 40%;
+    
+    .contact-kitisuru p, .contact-kilimani p {
+        font-size: 0.9rem;
+    }
+    
+    .back-button-container {
         top: 15px;
-    }  
-
+        left: 15px;
+    }
+    
+    #logo {
+        width: 70px;
+    }
+    
+    .back-button-container span {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
 }
 
-
+@media screen and (max-width: 480px) {
+    .contact {
+        padding: 10px;
+    }
+    
+    .contact-kitisuru, .contact-kilimani {
+        max-width: 95%;
+        padding: 15px;
+    }
+    
+    .contact-kitisuru h1, .contact-kilimani h1 {
+        font-size: 1.3rem;
+    }
+    
+    .contact-kitisuru p, .contact-kilimani p {
+        font-size: 0.8rem;
+    }
+    
+    .back-button-container {
+        top: 10px;
+        left: 10px;
+    }
+    
+    #logo {
+        width: 60px;
+    }
+    
+    .back-button-container span {
+        font-size: 0.6rem;
+        padding: 3px 8px;
+    }
+}

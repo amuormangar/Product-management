@@ -1,244 +1,234 @@
-body{
-    overflow-y: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
 }
 
-
-.home{
-    
-    background-image: url(images/outside.jpg);
-    
-    background-repeat: no-repeat;
-    background-position: center;
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
-    height: 110vh;
-    animation-name:image;
-    animation: image;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-#logo{
-    color: black;
-    margin-left: 600px;
-    position: absolute;
-    width: 10%;
-    top: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: image 20s infinite;
 }
 
-.animate::after{
-    animation: sizingAnimation 20s infinite;
-    /* animation-fill-mode: forwards !important; */
-    content: "welcome";
-    position: fixed;
-    color: rgb(59, 57, 57);
-    font-size: 90px;
-    margin-left: 550px;
-    top: 300px;
-    
-}
-.navigations ul{
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
-    color:white;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#logo {
     position: absolute;
-    margin-top: 700px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+    z-index: 10;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.7));
+}
+
+.text-container {
+    display: flex;
     justify-content: center;
-    margin-left: 400px;
-    gap: 30px;
-    list-style: none;
-    border-radius: 50px;
-    border: 1px solid;
-    background-color: black;
-    height: 40px;
-    width: 600px;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin-top: -50px;
+}
+
+.animate-text {
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    padding-top: 15PX;
-    
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    animation: textAnimation 20s infinite;
+    position: relative;
+    z-index: 2;
+}
 
-}
-a{
-    text-decoration: none;
-    color:white;
-}
-.icons{
-    justify-content: center;
+.navigations {
     position: absolute;
-}
-#facebook{
-    margin-left: 1300px;
-    color: blue;
-    position: absolute;
-    top: 10px;
-    
-    
-
-}
-#instagram{
- margin-left: 1250px;
- color: brown;
- position: absolute;
- top: 10px;
-}
-#whatsapp{
-    position:absolute ;
-    top: 600px;
-    margin-left: 1300px;
-    color: white;
-
-}
-@keyframes image{
-   0% {background-image: url(images/outside.jpg);}
-   20%{background-image: url(images/dining.jpg);} 
-   40%{background-image: url(images/food.jpg);}
-   60%{ background-image: url(images/spices.jpg);}
-80%{background-image: url(images/spices2.jpeg);
-}
-}
-@keyframes sizingAnimation{
-    from{
-        width: 200px;
-        height: 200px;
-        margin-bottom: 400px;
-        position: fixed;
-        content: "";
-    }
-    20%{
-        content: "discover";
-        position: fixed;
-    }
-    40%{
-        content: "experience";
-        position: fixed;
-    }
-    60%{
-        content: "taste";
-        position: fixed;
-
-    }
-    80%{
-        content: "savour";
-        position: fixed;
-    }
-}
-@media screen and (min-width:300px) and (max-width:800px){
-    body{
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-    .home{
-    
-        background-image: url(images/outside.jpg);
-        
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 900px;
-        width: 500px;
-        animation-name:image;
-        animation: image;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-    }
-
-
-
-
-    nimate::after{
-        animation: sizingAnimation 20s infinite;
-        /* animation-fill-mode: forwards !important; */
-        content: "welcome";
-        position: absolute;
-        color: rgb(59, 57, 57);
-        font-size: 1px;
-        right: 00px;
-        top: 100px;
-        
-    }
-    
-    #logo{
-        color: black;
-        right: 150px;
-        position: absolute;
-        width: 150px;
-        top:200px;
-    }
-    @keyframes sizingAnimation{
-        from{
-            width: 20px;
-            height: 20px;
-            margin-bottom: 00px;
-            /* position: fixed; */
-            content: "";
-        }
-        20%{
-            content: "discover";
-            /* position: fixed; */
-        }
-        40%{
-            content: "experience";
-            /* position: fixed; */
-        }
-        60%{
-            content: "taste";
-            /* position: fixed; */
-    
-        }
-        80%{
-            content: "savour";
-            /* position: fixed; */
-        }
-        
-        }
-
-.navigations ul{
-    display: flex;
-    color:white;
-    position: absolute;
-    justify-content: center;
-    margin-left: 7px;
-    gap: 8px;
-    list-style: none;
-    border-radius: 50px;
-    border: 1px solid;
-    background-color: black;
-    height: 30px;
     bottom: 30px;
-    width: 330px;
-    font-size: 12px;
-    position:absolute ;
-    padding-top: 11PX;
-    
-
-}
-a{
-    text-decoration: none;
-    color:white;
-}
-.icons{
+    width: 100%;
+    display: flex;
     justify-content: center;
-    position: absolute;
-}
-#facebook{
-    margin-left: 330px;
-    color: blue;
-    position: absolute;
-    top: 10px;
-    
-    
-
-}
-#instagram{
- margin-left: 300px;
- color: brown;
- position: absolute;
- top: 10px;
-}
-#whatsapp{
-    position:absolute ;
-    top: 600px;
-    right: -460px;
-    width: 90px;
-    color: green;
-}
-    
 }
 
+.navigations nav ul {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    border-radius: 50px;
+    list-style: none;
+    gap: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navigations nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.navigations nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icons {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+#whatsapp {
+    color: #25D366;
+}
+
+#instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#facebook {
+    color: #4267B2;
+}
+
+@keyframes image {
+    0% { background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80'); }
+    20% { background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80'); }
+    40% { background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80'); }
+    60% { background-image: url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80'); }
+    80% { background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80'); }
+}
+
+@keyframes textAnimation {
+    0% { content: "welcome"; }
+    20% { content: "discover"; }
+    40% { content: "experience"; }
+    60% { content: "taste"; }
+    80% { content: "savour"; }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        height: 100vh;
+    }
+    
+    #logo {
+        width: 80px;
+        top: 20px;
+    }
+    
+    .animate-text {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+    
+    .navigations nav ul {
+        padding: 10px 20px;
+        gap: 10px;
+    }
+    
+    .navigations nav ul li a {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+    
+    .icons {
+        top: 20px;
+        right: 20px;
+        gap: 10px;
+    }
+    
+    .icons i {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .animate-text {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+    
+    .navigations nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 90%;
+        padding: 10px;
+        gap: 5px;
+    }
+    
+    .navigations nav ul li a {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+    
+    .icons {
+        flex-direction: row;
+        top: 15px;
+        right: 15px;
+    }
+    
+    #logo {
+        width: 60px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .animate-text {
+        font-size: 2rem;
+    }
+    
+    .navigations {
+        bottom: 15px;
+    }
+    
+    .navigations nav ul {
+        padding: 8px 15px;
+        gap: 8px;
+    }
+}

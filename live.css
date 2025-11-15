@@ -1,92 +1,161 @@
-.live{
-    
-    background-image: url(images/afridrum.jpg);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+.live {
+    background-image: url('images/afridrum.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1500px;
-    height: 1000px;
+    width: 100%;
+    min-height: 100vh;
     position: relative;
-}
-#nubia{
-    position: absolute;
-    margin-left: 700px;
-}
-.live-nubia h1{
-    margin-left: 1000px;
-    font-size: 25px;
-    color:white;
-}
-.live-nubia p {
-    margin-left: 1000px;
-    color: brown;
-}
-#sage{
-    margin-left: 700px;
-    position: absolute;
-    top: 700px;
-
-}
-.live-sage h1{
-    margin-left: 1000px;
-    color: aliceblue;
-    position: absolute;
-    top: 700px;
-    font-size: 25px;
-}
-.live-sage p{
-    margin-left: 1000px;
-    position: absolute;
-    color: brown;
-    top: 670px;
-}
-#islam{
-    margin-left: 700px;
-    position: absolute;
-    top: 400px;
-}
-.live-islam h1{
-    margin-left: 1000px;
-    top: 400px;
-    color: aliceblue;
-    position: absolute;
-    font-size: 25px;
-}
-.live-islam p{
-    margin-left: 1000px;
-    position: absolute;
-    color: brown;
-    top: 380px;
-}
-.live-islam{
+    padding: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.live-sage{
-    display: flex;
-}
-.live-nubia{
-    display: flexbox;
-}
-.tukatike{
+
+.tukatike {
     color: aliceblue;
-    position: absolute;
-    left: 300px;
-    top: 270px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
 }
-.tukatike h1{
-    position: absolute;
-    top: 50px;
+
+.tukatike h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
-.tukatike h2{
+
+.tukatike h2 {
     color: brown;
-    margin-left: -30px;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
-#logo{
-    color: black;
-    margin-left: 260px;
+
+.live-nubia,
+.live-islam,
+.live-sage {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+#nubia,
+#islam,
+#sage {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.live-nubia p,
+.live-islam p,
+.live-sage p {
+    color: brown;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.live-nubia h1,
+.live-islam h1,
+.live-sage h1 {
+    color: aliceblue;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.back-button {
     position: absolute;
-    width: 10%;
-    top: 150px;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.7));
 }
 
 
+@media screen and (max-width: 768px) {
+    .live {
+        padding: 10px;
+    }
+    
+    .tukatike h1 {
+        font-size: 2rem;
+    }
+    
+    .tukatike h2 {
+        font-size: 1.2rem;
+    }
+    
+    .live-nubia,
+    .live-islam,
+    .live-sage {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    
+    #nubia,
+    #islam,
+    #sage {
+        width: 100%;
+        max-width: 300px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .live-nubia h1,
+    .live-islam h1,
+    .live-sage h1 {
+        font-size: 1rem;
+    }
+    
+    .back-button {
+        top: 10px;
+        left: 10px;
+    }
+    
+    #logo {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tukatike h1 {
+        font-size: 1.5rem;
+    }
+    
+    .tukatike h2 {
+        font-size: 1rem;
+    }
+    
+    .live-nubia h1,
+    .live-islam h1,
+    .live-sage h1 {
+        font-size: 0.9rem;
+    }
+    
+    #logo {
+        width: 60px;
+    }
+}
